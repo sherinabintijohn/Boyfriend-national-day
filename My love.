@@ -1,0 +1,85 @@
+# Boyfriend-national-day
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Boyfriend Day - Yoel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7fa);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .flower {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      animation: spin 8s linear infinite;
+    }
+
+    .petal {
+      width: 50px;
+      height: 50px;
+      background: pink;
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+
+    .petal:nth-child(1) { top: 0; left: 25px; }
+    .petal:nth-child(2) { top: 25px; left: 0; }
+    .petal:nth-child(3) { top: 25px; left: 50px; }
+    .petal:nth-child(4) { top: 50px; left: 25px; }
+
+    .center {
+      width: 30px;
+      height: 30px;
+      background: yellow;
+      border-radius: 50%;
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      box-shadow: 0 0 15px #fbc02d;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 2em;
+      color: #e91e63;
+    }
+
+    .message {
+      font-size: 1.2em;
+      color: #555;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flower">
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="petal"></div>
+    <div class="center"></div>
+  </div>
+
+  <h1>Happy Boyfriend Day, Yoel 🌸</h1>
+  <div class="message">You're my sunshine and my bloom. 🌼</div>
+</body>
+</html>
+
